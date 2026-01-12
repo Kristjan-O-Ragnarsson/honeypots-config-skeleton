@@ -1,0 +1,53 @@
+{
+  "logs": "file,terminal,json",
+  "logs_location": "/var/log/honeypots/",
+  "syslog_address": "",
+  "syslog_facility": 0,
+  "postgres": "",
+  "sqlite_file":"",
+  "db_options": [],
+  "sniffer_filter": "",
+  "sniffer_interface": "",
+  "honeypots": {
+    "ftp": {
+      "port": 21,
+      "ip": "0.0.0.0",
+      "username": "ftp",
+      "password": "anonymous",
+      "log_file_name": "ftp.log",
+      "max_bytes": 10000,
+      "backup_count": 10,
+      "options":["capture_commands"]
+    },
+    "telnet": {
+      "port": 23,
+      "ip": "0.0.0.0",
+      "username": "user",
+      "password": "frosty",
+      "log_file_name": "telnet.log",
+      "max_bytes": 10000,
+      "backup_count": 10,
+      "options":["capture_commands"]
+    },
+    "dns": {
+      "port": 53,
+      "ip": "0.0.0.0",
+      "log_file_name": "dns.log",
+      "max_bytes": 10000,
+      "backup_count": 10,
+      "options":["capture_commands"]
+    },
+    "irc": {
+      "port": 6667,
+      "ip": "0.0.0.0",
+      "username": "user",
+      "password": "frosty",
+      "log_file_name": "irc.log",
+      "max_bytes": 10000,
+      "backup_count": 10,
+      "options":["capture_commands"]
+    }
+
+
+  }
+}
