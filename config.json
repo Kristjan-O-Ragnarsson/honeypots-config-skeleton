@@ -26,8 +26,7 @@
       "password": "frosty",
       "log_file_name": "telnet.log",
       "max_bytes": 10000,
-      "backup_count": 10,
-      "options":["capture_commands"]
+      "backup_count": 10
     },
     "dns": {
       "port": 53,
