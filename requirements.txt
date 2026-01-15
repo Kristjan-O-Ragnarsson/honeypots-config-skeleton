@@ -1,1 +1,2 @@
 honeypots
+cryptography < 43.0.0
